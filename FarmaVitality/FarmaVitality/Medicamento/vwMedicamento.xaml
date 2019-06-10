@@ -1,0 +1,79 @@
+﻿<Window x:Class="FarmaVitality.Medicamento.vwMedicamento"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FarmaVitality.Medicamento"
+        mc:Ignorable="d"
+          Title="vwUsuario" Height="auto" Width="1000" WindowStyle="None"  ResizeMode="NoResize"  WindowStartupLocation="CenterScreen" WindowState="Normal"  
+  
+ 
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}" Loaded="Window_Loaded">
+    <Grid Background="#00E5FF" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+
+        </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+            <StackPanel  Background="#009688" Grid.Column="0"  Grid.ColumnSpan="7"  Grid.RowSpan="1" Width="auto" Height="auto"     >
+
+
+                <Button  x:Name="btnCerar" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" VerticalAlignment="Center" HorizontalAlignment="Right" Width="40" Height="40" Padding="6" Background="{x:Null}" BorderBrush="{x:Null}" Click="BtnCerar_Click">
+                    <materialDesign:PackIcon Kind="Power" Margin="1 8 8 4"/>
+                </Button>
+
+                <TextBlock Background="Transparent" Text="BIENVENIDO (A) AL REGISTRO DE MEDICAMENTOS"  VerticalAlignment="Center"  HorizontalAlignment="Center" />
+            </StackPanel>
+            <Grid x:Name="Datos"   Background="Transparent"  Grid.Column="0"  Grid.Row="1"   Grid.RowSpan="2" Grid.ColumnSpan="5" VerticalAlignment="Center"  HorizontalAlignment="Center" Margin="10">
+                <StackPanel Orientation="Horizontal"   Background="Transparent" Margin="5" VerticalAlignment="Top" >
+                    <Label x:Name="lblNombreUsuario" Content=" Nombre medicamento" Margin="5"/>
+                    <Label x:Name="lblPrimerAp" Content="  Fecha vencimiento"  Margin="5"/>
+                    <Label x:Name="lblSegundoAp" Content=" Precio unitario" Margin="5"/>
+                    <Label x:Name="lblCi" Content=" Tipo Medicamento"   Margin="5"/>
+                <Label x:Name="lblTelefono" Content="cantidad de medicamentos"   Margin="5"/>
+            </StackPanel>
+
+                <StackPanel Background="Transparent" Orientation="Horizontal"  Margin="5 45 5 5" >
+                    <TextBox x:Name="txtNombreMedicamento"  materialDesign:HintAssist.Hint="escribir.."  Width="130"  Height="25" Margin="2" />
+                <DatePicker  x:Name="dtFechaVen" materialDesign:HintAssist.Hint="Fecha venc.."  Width="130 " Margin="5" />
+                
+                <TextBox x:Name="txtPrecioUnitario" materialDesign:HintAssist.Hint="escribir."  Width="130"  Height="25" Margin="5"/>
+                    <TextBox x:Name="txtTipoMedicamento" materialDesign:HintAssist.Hint="escribir."  Width="130"  Height="25"  Margin="5"/>
+                <TextBox x:Name="txtCantidadMedicamentos"  materialDesign:HintAssist.Hint="escribir."  Width="130"  Height="25" Margin="5" />
+              
+                </StackPanel>
+                
+            </Grid>
+        <StackPanel   Orientation="Horizontal" Background="White" Grid.Column="0"  Grid.Row="3"   Grid.RowSpan="1" Grid.ColumnSpan="5"  VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5">
+            <Button x:Name="btnInsertar"  Click="BtnInsertar_Click"  Style="{StaticResource MaterialDesignRaisedDarkButton}"  Margin="5 " Width="90" Content="Insertar" ToolTip="Clic Para inseratr datos" />
+            <Button x:Name="btnGuardar"  Click="BtnGuardar_Click"  Style="{StaticResource MaterialDesignRaisedDarkButton}"  Margin="5 " Width="90" Content="Guardar" ToolTip="Clic Para inseratr Guardar" IsEnabled="False"/>
+            <Button x:Name="btnModificar"   Click="BtnModificar_Click" Style="{StaticResource MaterialDesignRaisedDarkButton}"  Margin="5 " Width="90" Content="Modificar" ToolTip="Clic Para inseratr Modificar" />
+            <Button  x:Name="btnElimiar"  Click="BtnElimiar_Click" Style="{StaticResource MaterialDesignRaisedDarkButton}"  Margin="5 " Width="90" Content="Eliminar" ToolTip="Clic Para inseratr Eliminar" />
+            <Button  x:Name="btnCancelar"  Click="BtnCancelar_Click " Style="{StaticResource MaterialDesignRaisedDarkButton}"  Margin="5 " Width="90" Content="Cancelar" ToolTip="Clic Para inseratr Cancelar" IsEnabled="False"/>
+
+        </StackPanel>
+        <DataGrid x:Name="dgvDatos"  Background="Transparent" Grid.Column="0"  Grid.Row="4"   Grid.RowSpan="3" Grid.ColumnSpan="5" Margin="5"  CanUserAddRows="False" SelectionChanged="DgvDatos_SelectionChanged" />
+        </Grid>
+</Window>

@@ -1,0 +1,6 @@
+C:\Users\Victoria\Desktop\ProyectWPF\FarmaVitality\Common\bin\Debug\Common.dll
+C:\Users\Victoria\Desktop\ProyectWPF\FarmaVitality\Common\bin\Debug\Common.pdb
+C:\Users\Victoria\Desktop\ProyectWPF\FarmaVitality\Common\obj\Debug\Common.csprojAssemblyReference.cache
+C:\Users\Victoria\Desktop\ProyectWPF\FarmaVitality\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\Victoria\Desktop\ProyectWPF\FarmaVitality\Common\obj\Debug\Common.dll
+C:\Users\Victoria\Desktop\ProyectWPF\FarmaVitality\Common\obj\Debug\Common.pdb

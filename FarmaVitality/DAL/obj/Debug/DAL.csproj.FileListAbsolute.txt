@@ -1,0 +1,11 @@
+C:\Users\Victoria\Desktop\ProyectWPF\FarmaVitality\DAL\bin\Debug\DAL.dll
+C:\Users\Victoria\Desktop\ProyectWPF\FarmaVitality\DAL\bin\Debug\DAL.pdb
+C:\Users\Victoria\Desktop\ProyectWPF\FarmaVitality\DAL\bin\Debug\Common.dll
+C:\Users\Victoria\Desktop\ProyectWPF\FarmaVitality\DAL\bin\Debug\MySql.Data.dll
+C:\Users\Victoria\Desktop\ProyectWPF\FarmaVitality\DAL\bin\Debug\Common.pdb
+C:\Users\Victoria\Desktop\ProyectWPF\FarmaVitality\DAL\bin\Debug\MySql.Data.xml
+C:\Users\Victoria\Desktop\ProyectWPF\FarmaVitality\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\Victoria\Desktop\ProyectWPF\FarmaVitality\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Victoria\Desktop\ProyectWPF\FarmaVitality\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Victoria\Desktop\ProyectWPF\FarmaVitality\DAL\obj\Debug\DAL.dll
+C:\Users\Victoria\Desktop\ProyectWPF\FarmaVitality\DAL\obj\Debug\DAL.pdb
